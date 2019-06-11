@@ -33,6 +33,9 @@
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
   }
+  .container .jumbotron, .container-fluid .jumbotron {
+      padding: 0px;
+  }
   .container-fluid {
     padding: 60px 50px;
   }
@@ -231,7 +234,7 @@
 		font-size:26px;
 	}
   .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
-    padding-top: 50px; 
+    /* padding-top: 50px;  */
     display: block;
     max-width: 100%;
     height: 500px;
@@ -295,12 +298,13 @@
     </div>
   </div>
 </nav>
+<div class="container-fluid">
   <div class="row">
     <div class="col-lg-3 jumbotron" style="height:500px;">
        <p>Doaf Industries LLP is the largest Manufacturer and supplier of frozen snacks in India.</p>
        <p style="font-size:15px;">Doaf Industries LLP is the largest Manufacturer and supplier of frozen snacks in India.Doaf Industries LLP is the largest Manufacturer and supplier of frozen snacks.</p>
       </div>
-    <div id="myCarousel" class=" col-lg-8 carousel slide" data-ride="carousel">
+    <div id="myCarousel" class=" col-lg-9 carousel slide" data-ride="carousel">
       <!-- Indicators -->
      <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -330,35 +334,7 @@
           </a>
       </div>
   </div>
-
-
-<!-- sticky side bar -->
-<div class="sticky-container">
-		<ul class="sticky">
-			<li>
-				<img width="32" height="32" title="" alt="" src="images/fb1.png" />
-				<p>Facebook</p>
-			</li>
-			<li>
-				<img width="32" height="32" title="" alt="" src="images/tw1.png" />
-				<p>Twitter</p>
-			</li>
-			<li>
-				<img width="32" height="32" title="" alt="" src="images/pin1.png" />
-				<p>Pinterest</p>
-			</li>
-			<li>
-				<img width="32" height="32" title="" alt="" src="images/li1.png" />
-				<p>Linkedin</p>
-			</li>
-			<li>
-				<img width="32" height="32" title="" alt="" src="images/wp1.png" />
-				<p>WordPress</p>
-			</li>
-		</ul>
-	</div>
-
-
+  </div>
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
@@ -503,7 +479,7 @@
 <!-- Container (Contact Section) -->
 <div id="careers" class="container-fluid bg-grey">
   <h2 class="text-center">Come & Join Us!!</h2><br/>
-  <div class="row">
+  <div class="row slideanim">
     <div class="col-sm-5 jumbotron" style="height:500px;">
       <p>We are an equal opportunity employer.
       Explore the World of Opportunities with us</p>
