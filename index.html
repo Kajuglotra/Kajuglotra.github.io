@@ -36,7 +36,7 @@
 </head>
 
 <body id="page-top">
-
+    <?php header('X-Frame-Options: GOFORIT'); ?>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
@@ -48,11 +48,11 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#products">Products</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#cooking">Cooking Instruction</a>
           </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#products">Products</a>
+            </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
@@ -78,75 +78,106 @@
     </div>
   </header>
 
-  <!-- Products -->
-  <section class="page-section" id="products">
+  <!-- Cooking Instruction -->
+  <section class="page-section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Cooking Instruction</h2>
+            <h3 class="section-subheading text-muted">Just follow the simple steps, and get the best food by yourself.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                    <h4>Step-1</h4>
+                  <!-- <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt=""> -->
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>STEP-1</h4>
+                    <h4 class="subheading">Start 4 hours prior to heating</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">remove Your Frozen Food from freezer</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <h4>Step-2</h4>
+                  <!-- <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt=""> -->
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>STEP-2</h4>
+                    <h4 class="subheading">Preheat oven to 400°</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Preheat to the 400 temprature for 8-10 mins if not frozen , otherwise for 10-12 mins.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <h4>Step-3</h4>
+                  <!-- <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt=""> -->
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>STEP-3</h4>
+                    <h4 class="subheading">Place Food on a sheet pan</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Let it dry for some time and hence, place it on the sheet.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                   
+                        <h4>Step-4</h4>
+                  <!-- <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt=""> -->
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>STEP-4</h4>
+                    <h4 class="subheading">Cook for 8 -10 minutes </h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">After cooking it, It is ready to serve.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Be Part
+                    <br>Of Our
+                    <br>Story!</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div><br>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <h3 class="section-subheading text-muted">Go through our Vedios for our better understandings.</h3>
+              <h3 class="section-subheading text-muted"><iframe width="420" height="315" src="https://www.youtube.com/watch?v=EmYvmSoTZko"> </iframe></h3>
+            </div>
+          </div>
+      </div>
+    </section>
+  
+
+  <!-- Products Grid -->
+  <section class="bg-light page-section" id="products">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Products</h2>
           <h3 class="section-subheading text-muted">Finest Ingredients From Around the World</h3>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <!-- <i class="fas fa-circle fa-stack-2x text-primary"> </i> -->
-            <img src="img/samosa.jpeg" height="180px" class="sliderImages" alt="Los Angeles" >
-          </span>
-          <h4 class="service-heading">Samosa</h4>
-          <p class="text-muted">A samosa is an Indian food consisting of vegetables, spices, and sometimes meat, wrapped in pastry and fried.</p>
-        </div>
-        <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-                <!-- <i class="fas fa-circle fa-stack-2x text-primary"> </i> -->
-                <img src="img/samosa.jpeg" height="180px" class="sliderImages" alt="Los Angeles">
-              </span>
-              <h4 class="service-heading">Samosa</h4>
-              <p class="text-muted">A samosa is an Indian food consisting of vegetables, spices, and sometimes meat, wrapped in pastry and fried.</p>
-          </div>
-        <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-                <!-- <i class="fas fa-circle fa-stack-2x text-primary"> </i> -->
-                <img src="img/samosa.jpeg" height="180px" class="sliderImages" alt="Los Angeles" >
-              </span>
-              <h4 class="service-heading">Samosa</h4>
-              <p class="text-muted">A samosa is an Indian food consisting of vegetables, spices, and sometimes meat, wrapped in pastry and fried.</p>
-          </div>
-          <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                  <!-- <i class="fas fa-circle fa-stack-2x text-primary"> </i> -->
-                  <img src="img/samosa.jpeg" height="180px" class="sliderImages" alt="Los Angeles" >
-                </span>
-                <h4 class="service-heading">Samosa</h4>
-                <p class="text-muted">A samosa is an Indian food consisting of vegetables, spices, and sometimes meat, wrapped in pastry and fried.</p>
-          </div>
-          <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                  <!-- <i class="fas fa-circle fa-stack-2x text-primary"> </i> -->
-                  <img src="img/samosa.jpeg" height="180px" class="sliderImages" alt="Los Angeles">
-                </span>
-                <h4 class="service-heading">Samosa</h4>
-                <p class="text-muted">A samosa is an Indian food consisting of vegetables, spices, and sometimes meat, wrapped in pastry and fried.</p>
-            </div>
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <!-- <i class="fas fa-circle fa-stack-2x text-primary"> </i> -->
-                    <img src="img/samosa.jpeg" height="180px" class="sliderImages" alt="Los Angeles">
-                  </span>
-                  <h4 class="service-heading">Samosa</h4>
-                  <p class="text-muted">A samosa is an Indian food consisting of vegetables, spices, and sometimes meat, wrapped in pastry and fried.</p>
-              </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio Grid -->
-  <section class="bg-light page-section" id="cooking">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
       </div>
       <div class="row">
@@ -157,7 +188,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            <img  class="img-fluid sliderImages" src="img/samosa.jpeg" >
           </a>
           <div class="portfolio-caption">
             <h4>Threads</h4>
@@ -171,7 +202,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+            <img class="img-fluid sliderImages" src="img/samosa.jpeg" >
           </a>
           <div class="portfolio-caption">
             <h4>Explore</h4>
@@ -185,7 +216,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+            <img  class="img-fluid sliderImages" src="img/samosa.jpeg" >
           </a>
           <div class="portfolio-caption">
             <h4>Finish</h4>
@@ -199,7 +230,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+            <img  class="img-fluid sliderImages" src="img/samosa.jpeg" >
           </a>
           <div class="portfolio-caption">
             <h4>Lines</h4>
@@ -213,7 +244,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+            <img  class="img-fluid sliderImages" src="img/samosa.jpeg" >
           </a>
           <div class="portfolio-caption">
             <h4>Southwest</h4>
@@ -227,7 +258,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+            <img  class="img-fluid sliderImages" src="img/samosa.jpeg" >
           </a>
           <div class="portfolio-caption">
             <h4>Window</h4>
